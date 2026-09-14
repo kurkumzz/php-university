@@ -7,9 +7,8 @@ function biggestNumber(int $first, int $second, int $third) : int
         return $second;
     } 
     
-    else{
-        return $third;
-    }
+    return $third;
+    
 }
 
 echo biggestNumber(3, 5, 1);

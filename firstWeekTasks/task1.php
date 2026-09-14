@@ -1,7 +1,7 @@
 <?php
 function task1(int $n): int
 {
-    if ($n < 0) {
+    if($n < 0){
         return $n * $n;
     } elseif ($n > 0) {
         return $n * $n * $n;

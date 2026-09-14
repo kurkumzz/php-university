@@ -6,10 +6,8 @@ function smallestNumber(int $first, int $second, int $third) : int
     } elseif($second <= $first && $second <= $third){
         return $second;
     } 
+    return $third;
     
-    else{
-        return $third;
-    }
 }
 
 echo smallestNumber(3, 5, 1);

@@ -1,24 +1,28 @@
 <?php
 function biggestAndSmallestNumber(int $first, int $second, int $third) : string
 {
-    //if($first >= $second && $first >= $third && $second <= $first && $second <= $third){
-        //return "The biggest: " . $first . PHP_EOL . "The smallest: " . $second;
-    //} elseif($second >= $first && $second >= $third){
-        //return $second;
-    //} 
-    
-    //else{
-        //return $third;
-    //}
-
-    if($first >= $second && $first <= $third){
-        return $second . PHP_EOL . $third;
-    } elseif($second >= $first && $second <= $third){
-        return $first . PHP_EOL . $third;
-    }
+    $resultBig = "The biggest number is ";
+    $resultSmall = " The smallest number is ";
+    if($first >= $second && $first >= $third){
+        $resultBig .= $first;
+    } elseif($second >= $first && $second >= $third){
+        $resultBig .= $second;
+    } 
     else{
-        return $first . PHP_EOL . $second;
+        $resultBig .=  $third;
     }
+
+    if($first <= $second && $first <= $third){
+        $resultSmall .= $first;
+    } elseif($second <= $first && $second <= $third){
+        $resultSmall .= $second;
+    } 
+    
+    else{
+        $resultSmall .= $third;
+    }
+
+    return $resultBig . PHP_EOL . $resultSmall;
 }
 
-echo biggestAndSmallestNumber(3, 5, 1);
+echo biggestAndSmallestNumber(0, 5, 1);
