@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Вычисление стоимости разговора по телефону</title>
+    <link rel="stylesheet" href="firstStyle.css">
+</head>
+<body>
 <?php
 $a=$_POST["ST"];
 If ($a<500)
@@ -19,3 +27,5 @@ Echo "Вам со скидкой 3%  ". "$res4" . "<br>";
 }
 
 ?>
+</body>
+</html>
