@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <title>Вычисление стоимости разговора по телефону</title>
     <link rel="stylesheet" href="firstStyle.css">
-    <style>body{
-        background-color: black;
-    }</style>
+    
 </head>
 <body>
 <?php
 $cityCode = $_POST["cityCode"];
 $minutesCount = $_POST["minutesCount"];
 
-$minutePrice;
-$city;
+$minutePrice = null;
+$city = "";
 $result;
 
 
