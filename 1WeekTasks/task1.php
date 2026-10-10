@@ -10,7 +10,7 @@ function task1(int $n): int
     return $n;
 }
 
-$numbers = [0, 8, -8];
+$numbers = [0, 8, -8, 55];
 $current = 1;
 
 foreach ($numbers as $n) 
