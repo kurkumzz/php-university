@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Решение функции. Шаг 0.5 </title>
+    <title>Факториал числа </title>
     <link rel="stylesheet" href="firstStyle.css">
     
 </head>
